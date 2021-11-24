@@ -5,5 +5,9 @@ test("Given a number  n between 1 - 100 print n numbers", () => {
 });
 
 test("Given a multiple of 3 print Fizz", () => {
-    expect(fizzBuzz(3)).toBe("12Fizz");
+  expect(fizzBuzz(3)).toBe("12Fizz");
 });
+
+
+
+
