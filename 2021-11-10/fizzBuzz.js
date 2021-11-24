@@ -1,13 +1,14 @@
 function fizzBuzz(n){
-    let numbers = [...Array(n).keys()]
+    let numbers = [...Array(n).keys()].map((num) => num + 1);
+    console.log(numbers);
 
     numbers = numbers.reduce((result, element) => {
-        if((element + 1) % 3 == 0){
+        if(element % 3 == 0){
             return result + "Fizz";
         }else{
-            return result + (element + 1);
+            return result + element;
         }
-    });
+    }, "");
     
     return numbers;
 }
